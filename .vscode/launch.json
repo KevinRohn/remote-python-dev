@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Remote Debug",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "192.168.20.217", // IP of the remote machine
+                "port": 5679 // Port of the remote machine
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/opt/remote/modbus-stack"
+                }
+            ],
+            "justMyCode": false,
+            "redirectOutput": true
+        }
+    ]
+  }

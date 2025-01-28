@@ -1,0 +1,20 @@
+# Include everything by default
++ *
++ */
++ /**
+
+# Include Python project files explicitly
++ /*.py
++ /**/*.py
++ /src/***
++ /config/***
++ /data/***
+
+# Exclude unnecessary files
+- __pycache__/
+- *.pyc
+- .pytest_cache/
+- .git/
+- .vscode/
+- *.log
+- .DS_Store
